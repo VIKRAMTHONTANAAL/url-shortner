@@ -53,7 +53,7 @@ def home():
                 db.session.commit()
                 return redirect(url_for("display_short_url",url=short_url))
     else:
-        return render_template("home.html")
+        return render_template("index.html")
 
 
 @app.route('/vikram')
